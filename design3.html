@@ -1,0 +1,1246 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gold mining, mineral exploration, drilling and mining equipment solutions.">
+<meta name="theme-color" content="#183C32">
+<title>Gold Mining Co. | Resources & Exploration</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --forest:#183C32;
+    --forest-light:#285B49;
+    --sage:#849B7B;
+    --sage-light:#E6ECE3;
+    --sand:#D4B88B;
+    --ivory:#F8F7F1;
+    --white:#FFFFFF;
+    --text:#59645C;
+    --border:#E7E8DF;
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth;scroll-padding-top:85px}
+
+body{
+    margin:0;
+    font-family:'DM Sans',sans-serif;
+    color:var(--forest);
+    background:var(--ivory);
+}
+
+a{text-decoration:none}
+
+img{max-width:100%}
+
+.navbar{
+    background:var(--forest);
+    padding:17px 0;
+}
+
+.brand{
+    color:white;
+    font-size:19px;
+    font-weight:600;
+    letter-spacing:.4px;
+    display:flex;
+    align-items:center;
+    gap:11px;
+}
+
+.brand:hover{color:white}
+
+.brand-icon{
+    width:42px;
+    height:42px;
+    display:grid;
+    place-items:center;
+    background:var(--sand);
+    color:var(--forest);
+    border-radius:50%;
+    font-size:19px;
+}
+
+.brand small{
+    display:block;
+    font-size:9px;
+    color:#C9D4C7;
+    letter-spacing:2px;
+    margin-top:3px;
+}
+
+.nav-link{
+    color:#E0E7E0!important;
+    font-size:13px;
+    margin:0 9px;
+    font-weight:500;
+}
+
+.nav-link:hover{color:var(--sand)!important}
+
+.btn-nature{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    background:var(--sage);
+    color:white;
+    padding:14px 23px;
+    border:1px solid var(--sage);
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-nature:hover{
+    background:var(--forest-light);
+    border-color:var(--forest-light);
+    color:white;
+    transform:translateY(-2px);
+}
+
+/* HERO */
+
+.hero{
+    min-height:680px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    background:var(--forest);
+    overflow:hidden;
+}
+
+.hero-image{
+    position:absolute;
+    top:0;
+    right:0;
+    width:57%;
+    height:100%;
+    object-fit:cover;
+    opacity:.88;
+    clip-path:polygon(15% 0,100% 0,100% 100%,0 100%);
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(90deg,var(--forest) 0%,var(--forest) 40%,transparent 100%);
+    pointer-events:none;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:650px;
+    padding:100px 0;
+    color:white;
+}
+
+.eyebrow{
+    color:var(--sand);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(43px,5.5vw,70px);
+    line-height:1.16;
+    font-weight:500;
+    margin:23px 0;
+}
+
+.hero h1 span{color:var(--sand)}
+
+.hero p{
+    color:#D5DED6;
+    font-size:15px;
+    line-height:1.9;
+    max-width:550px;
+    margin-bottom:30px;
+}
+
+.hero-caption{
+    position:absolute;
+    z-index:3;
+    bottom:30px;
+    right:7%;
+    color:white;
+    font-size:11px;
+    letter-spacing:1.5px;
+}
+
+/* INTRO STRIP */
+
+.intro-strip{
+    background:var(--sand);
+    padding:23px 0;
+}
+
+.intro-strip p{
+    color:var(--forest);
+    font-size:13px;
+    font-weight:600;
+    margin:0;
+    text-align:center;
+    letter-spacing:.5px;
+}
+
+/* COMMON SECTIONS */
+
+.section{
+    padding:95px 0;
+}
+
+.section-label{
+    color:var(--sage);
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(31px,4vw,45px);
+    font-weight:500;
+    line-height:1.25;
+    margin:14px 0 20px;
+}
+
+.section-text{
+    color:var(--text);
+    font-size:14px;
+    line-height:1.95;
+}
+
+/* ABOUT */
+
+.about-section{background:var(--ivory)}
+
+.about-visual{
+    position:relative;
+    padding:0 30px 30px 0;
+}
+
+.about-visual img{
+    width:100%;
+    height:490px;
+    object-fit:cover;
+}
+
+.about-visual::after{
+    content:"";
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:65%;
+    height:65%;
+    border:2px solid var(--sand);
+    z-index:0;
+}
+
+.about-visual img{position:relative;z-index:1}
+
+.about-stamp{
+    position:absolute;
+    z-index:2;
+    left:-12px;
+    bottom:55px;
+    background:var(--forest);
+    color:white;
+    padding:20px 25px;
+}
+
+.about-stamp h3{
+    font-size:32px;
+    font-weight:600;
+    margin:0;
+    color:var(--sand);
+}
+
+.about-stamp p{
+    font-size:11px;
+    margin:3px 0 0;
+}
+
+.about-point{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.about-point i{
+    width:43px;
+    height:43px;
+    flex-shrink:0;
+    display:grid;
+    place-items:center;
+    background:var(--sage-light);
+    color:var(--forest-light);
+    font-size:18px;
+}
+
+.about-point h6{
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.about-point p{
+    font-size:12px;
+    line-height:1.8;
+    color:var(--text);
+    margin:0;
+}
+
+/* STATISTICS */
+
+.stats-section{
+    background:var(--forest-light);
+    padding:48px 0;
+    color:white;
+}
+
+.stat-item{
+    border-right:1px solid #ffffff35;
+    padding:10px 15px;
+    text-align:center;
+}
+
+.stat-item:last-child{border:0}
+
+.stat-item h2{
+    color:var(--sand);
+    font-size:38px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.stat-item p{
+    font-size:12px;
+    color:#E0E8E0;
+    margin:0;
+}
+
+/* SERVICES */
+
+.services-section{
+    background:var(--sage-light);
+}
+
+.service-card{
+    height:100%;
+    background:white;
+    padding:32px 27px;
+    border-bottom:3px solid transparent;
+    transition:.3s;
+}
+
+.service-card:hover{
+    border-color:var(--sage);
+    transform:translateY(-5px);
+    box-shadow:0 12px 28px #183c3210;
+}
+
+.service-number{
+    font-family:'Playfair Display',serif;
+    color:#B9C6B5;
+    font-size:31px;
+    margin-bottom:22px;
+}
+
+.service-icon{
+    width:54px;
+    height:54px;
+    display:grid;
+    place-items:center;
+    background:var(--sage-light);
+    color:var(--forest-light);
+    font-size:22px;
+    margin-bottom:22px;
+}
+
+.service-card h5{
+    font-size:17px;
+    font-weight:600;
+    margin-bottom:13px;
+}
+
+.service-card p{
+    color:var(--text);
+    font-size:13px;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.service-card a{
+    color:var(--forest-light);
+    font-size:12px;
+    font-weight:700;
+}
+
+/* PROJECTS */
+
+.projects-section{
+    background:var(--ivory);
+}
+
+.project-card{
+    position:relative;
+    height:390px;
+    overflow:hidden;
+    background:#ddd;
+}
+
+.project-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.project-card:hover img{transform:scale(1.06)}
+
+.project-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:linear-gradient(0deg,#142e25e8,transparent 75%);
+}
+
+.project-info{
+    position:absolute;
+    z-index:2;
+    left:24px;
+    right:20px;
+    bottom:25px;
+    color:white;
+}
+
+.project-info span{
+    color:var(--sand);
+    font-size:10px;
+    letter-spacing:1.5px;
+    font-weight:700;
+}
+
+.project-info h5{
+    font-size:19px;
+    font-weight:600;
+    margin:8px 0 5px;
+}
+
+.project-info p{
+    color:#E0E7E0;
+    font-size:12px;
+    margin:0;
+}
+
+/* SUSTAINABILITY */
+
+.commitment-section{
+    background:var(--forest);
+    color:white;
+}
+
+.commitment-section .section-text{color:#D0DAD1}
+
+.commitment-image{
+    width:100%;
+    height:440px;
+    object-fit:cover;
+}
+
+.commitment-point{
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
+    margin-top:22px;
+}
+
+.commitment-point i{
+    color:var(--sand);
+    font-size:17px;
+    margin-top:3px;
+}
+
+.commitment-point p{
+    color:#E0E8E0;
+    font-size:13px;
+    margin:0;
+    line-height:1.7;
+}
+
+/* CONTACT */
+
+.contact-section{
+    background:#EAEDE5;
+}
+
+.contact-details{
+    margin-top:30px;
+}
+
+.contact-detail{
+    display:flex;
+    gap:14px;
+    margin-bottom:22px;
+}
+
+.contact-detail i{
+    width:43px;
+    height:43px;
+    display:grid;
+    place-items:center;
+    background:white;
+    color:var(--forest-light);
+    flex-shrink:0;
+}
+
+.contact-detail h6{
+    font-size:13px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.contact-detail p,.contact-detail a{
+    font-size:12px;
+    color:var(--text);
+    margin:0;
+}
+
+.contact-form{
+    background:white;
+    padding:38px;
+}
+
+.contact-form h4{
+    font-family:'Playfair Display',serif;
+    font-size:27px;
+    margin-bottom:25px;
+}
+
+.form-label{
+    font-size:12px;
+    font-weight:600;
+    color:var(--forest);
+}
+
+.form-control,.form-select{
+    border:1px solid var(--border);
+    border-radius:0;
+    padding:13px;
+    background:#FBFBF8;
+    font-size:13px;
+}
+
+.form-control:focus,.form-select:focus{
+    border-color:var(--sage);
+    box-shadow:0 0 0 .15rem #849b7b20;
+}
+
+/* FOOTER */
+
+footer{
+    background:#112B23;
+    color:white;
+    padding:60px 0 20px;
+}
+
+.footer-description{
+    color:#BFCBC1;
+    font-size:13px;
+    line-height:1.9;
+    max-width:350px;
+    margin-top:18px;
+}
+
+.footer-title{
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{margin-bottom:12px}
+
+.footer-links a{
+    color:#BFCBC1;
+    font-size:12px;
+}
+
+.footer-links a:hover{color:var(--sand)}
+
+.footer-bottom{
+    border-top:1px solid #ffffff25;
+    margin-top:35px;
+    padding-top:20px;
+    color:#AAB9AD;
+    font-size:11px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:991px){
+    .navbar-collapse{
+        padding:18px;
+        background:var(--forest-light);
+        margin-top:15px;
+    }
+
+    .hero-image{
+        width:100%;
+        opacity:.32;
+        clip-path:none;
+    }
+
+    .hero::after{
+        background:linear-gradient(90deg,#183c32ed,#183c32a8);
+    }
+
+    .hero-caption{display:none}
+}
+
+@media(max-width:767px){
+    .section{padding:65px 0}
+    .hero{min-height:620px}
+    .hero-content{padding:90px 0}
+    .hero h1{font-size:43px}
+    .stat-item{border:0;margin-bottom:15px}
+    .about-visual img{height:330px}
+    .about-stamp{left:0;bottom:45px}
+    .project-card{height:320px}
+    .commitment-image{height:310px}
+    .contact-form{padding:24px}
+}
+
+@media(prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    *,*::before,*::after{transition:none!important}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav class="navbar navbar-expand-lg sticky-top">
+<div class="container">
+
+<a href="#home" class="brand">
+    <span class="brand-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+    <span>
+        GOLD MINING CO.
+        <small>MINING & EXPLORATION</small>
+    </span>
+</a>
+
+<button class="navbar-toggler bg-light" type="button"
+data-bs-toggle="collapse" data-bs-target="#mainNav"
+aria-controls="mainNav" aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="mainNav">
+
+<ul class="navbar-nav ms-auto align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#projects">Equipment</a></li>
+<li class="nav-item"><a class="nav-link" href="#commitment">Our Values</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+<a href="#contact" class="btn-nature">Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+</li>
+</ul>
+
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+
+<header class="hero" id="home">
+
+<img class="hero-image"
+src="https://images.unsplash.com/photo-1513828583688-c52646e9b309?auto=format&fit=crop&w=1800&q=85"
+alt="Mining landscape">
+
+<div class="container">
+<div class="hero-content">
+
+<div class="eyebrow">Exploration · Resources · Operations</div>
+
+<h1>
+Building Value<br>
+Through <span>Natural Resources.</span>
+</h1>
+
+<p>
+Combining mining expertise, exploration capabilities
+and modern equipment to support mineral development
+and operational excellence.
+</p>
+
+<a href="#about" class="btn-nature">
+Discover Our Company
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+</div>
+
+<div class="hero-caption">MINING WITH PURPOSE & PRECISION</div>
+
+</header>
+
+<!-- INTRO STRIP -->
+
+<section class="intro-strip">
+<div class="container">
+<p>
+EXPLORATION &nbsp; / &nbsp; DEVELOPMENT &nbsp; / &nbsp; EXTRACTION &nbsp; / &nbsp; EQUIPMENT
+</p>
+</div>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section about-section" id="about">
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6">
+
+<div class="about-visual">
+
+<img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1100&q=85"
+alt="Mining and industrial operations" loading="lazy">
+
+<div class="about-stamp">
+<h3>10+</h3>
+<p>Years of Experience</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<div class="section-label">ABOUT OUR COMPANY</div>
+
+<h2 class="section-title">
+Developing Mineral Resources with Expertise and Responsibility
+</h2>
+
+<p class="section-text">
+We are a mining and exploration company focused on supporting
+mineral resource development through technical knowledge,
+professional teams and modern equipment.
+</p>
+
+<p class="section-text">
+Our approach combines operational planning, exploration
+capabilities and responsible practices to support mining
+projects at different stages of development.
+</p>
+
+<div class="about-point">
+<i class="fa-solid fa-shield-halved"></i>
+<div>
+<h6>Safety & Operational Standards</h6>
+<p>Risk management and occupational safety across operational activities.</p>
+</div>
+</div>
+
+<div class="about-point">
+<i class="fa-solid fa-users-gear"></i>
+<div>
+<h6>Technical Expertise</h6>
+<p>Experienced professionals and machinery supporting project requirements.</p>
+</div>
+</div>
+
+<div class="about-point">
+<i class="fa-solid fa-leaf"></i>
+<div>
+<h6>Responsible Resource Management</h6>
+<p>Environmental awareness and responsible operational practices.</p>
+</div>
+</div>
+
+<a href="#services" class="btn-nature mt-4">
+Explore Our Capabilities
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- STATISTICS -->
+
+<section class="stats-section">
+<div class="container">
+<div class="row">
+
+<div class="col-6 col-lg-3">
+<div class="stat-item">
+<h2>15+</h2>
+<p>Mining Projects</p>
+</div>
+</div>
+
+<div class="col-6 col-lg-3">
+<div class="stat-item">
+<h2>250+</h2>
+<p>Equipment Units</p>
+</div>
+</div>
+
+<div class="col-6 col-lg-3">
+<div class="stat-item">
+<h2>500+</h2>
+<p>Professionals</p>
+</div>
+</div>
+
+<div class="col-6 col-lg-3">
+<div class="stat-item">
+<h2>10+</h2>
+<p>Years of Experience</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section services-section" id="services">
+<div class="container">
+
+<div class="row align-items-end mb-5">
+
+<div class="col-lg-8">
+<div class="section-label">OUR EXPERTISE</div>
+<h2 class="section-title">Integrated Mining Solutions</h2>
+<p class="section-text">
+Our capabilities support exploration, mine development,
+extraction and equipment requirements.
+</p>
+</div>
+
+<div class="col-lg-4 text-lg-end mt-3">
+<a href="#contact" class="btn-nature">
+Discuss Your Requirements
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+</div>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-number">01</div>
+<div class="service-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+<h5>Exploration & Drilling</h5>
+<p>
+Geological exploration, drilling, sampling and mineral
+assessment to evaluate resource potential.
+</p>
+<a href="#contact">ENQUIRE ABOUT SERVICE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-number">02</div>
+<div class="service-icon"><i class="fa-solid fa-mountain"></i></div>
+<h5>Mine Operations</h5>
+<p>
+Mine development, extraction, material handling and
+operational management for mining projects.
+</p>
+<a href="#contact">ENQUIRE ABOUT SERVICE <i class="fa-solid fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4">
+<div class="service-card">
+<div class="service-number">03</div>
+<div class="service-icon"><i class="fa-solid fa-truck-monster"></i></div>
+<h5>Heavy Equipment</h5>
+<p>
+Machinery solutions for excavation, drilling,
+crushing and material transportation.
+</p>
+<a href="#projects">VIEW EQUIPMENT <i class="fa-solid fa-arrow-right ms-2"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- EQUIPMENT -->
+
+<section class="section projects-section" id="projects">
+<div class="container">
+
+<div class="text-center mb-5">
+<div class="section-label">OUR EQUIPMENT</div>
+<h2 class="section-title">Machinery That Supports Operations</h2>
+<p class="section-text mx-auto" style="max-width:650px">
+Specialized machinery and equipment supporting mining,
+excavation, material movement and exploration activities.
+</p>
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-6 col-lg-3">
+<div class="project-card">
+<img src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=800&q=85"
+alt="Heavy excavation equipment" loading="lazy">
+<div class="project-info">
+<span>01 / EARTHMOVING</span>
+<h5>Heavy Excavators</h5>
+<p>Large-scale excavation and earthmoving.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="project-card">
+<img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=800&q=85"
+alt="Industrial machinery" loading="lazy">
+<div class="project-info">
+<span>02 / PROCESSING</span>
+<h5>Crushing Equipment</h5>
+<p>Mineral material preparation.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="project-card">
+<img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=85"
+alt="Heavy transport truck" loading="lazy">
+<div class="project-info">
+<span>03 / TRANSPORT</span>
+<h5>Mining Trucks</h5>
+<p>Heavy material transportation.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-3">
+<div class="project-card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=85"
+alt="Drilling and construction equipment" loading="lazy">
+<div class="project-info">
+<span>04 / EXPLORATION</span>
+<h5>Drilling Equipment</h5>
+<p>Exploration and site operations.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- COMMITMENT -->
+
+<section class="section commitment-section" id="commitment">
+<div class="container">
+
+<div class="row align-items-center g-5">
+
+<div class="col-lg-6">
+
+<div class="section-label">OUR COMMITMENT</div>
+
+<h2 class="section-title">
+Progress Through Responsible Mining
+</h2>
+
+<p class="section-text">
+We believe effective mining requires careful planning,
+capable people and attention to environmental and
+operational responsibilities.
+</p>
+
+<div class="commitment-point">
+<i class="fa-solid fa-circle-check"></i>
+<p>Occupational health and safety procedures.</p>
+</div>
+
+<div class="commitment-point">
+<i class="fa-solid fa-circle-check"></i>
+<p>Workforce training and technical development.</p>
+</div>
+
+<div class="commitment-point">
+<i class="fa-solid fa-circle-check"></i>
+<p>Equipment inspection and operational risk management.</p>
+</div>
+
+<div class="commitment-point">
+<i class="fa-solid fa-circle-check"></i>
+<p>Environmental awareness and responsible resource practices.</p>
+</div>
+
+<a href="#contact" class="btn-nature mt-4">
+Speak With Our Team
+<i class="fa-solid fa-arrow-right"></i>
+</a>
+
+</div>
+
+<div class="col-lg-6">
+
+<img class="commitment-image"
+src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1100&q=85"
+alt="Industrial operations and workforce" loading="lazy">
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact-section" id="contact">
+<div class="container">
+
+<div class="row g-5">
+
+<div class="col-lg-5">
+
+<div class="section-label">GET IN TOUCH</div>
+
+<h2 class="section-title">
+Let's Discuss Your Mining Project.
+</h2>
+
+<p class="section-text">
+Contact our team to discuss exploration requirements,
+mining operations, equipment solutions or potential
+business partnerships.
+</p>
+
+<div class="contact-details">
+
+<div class="contact-detail">
+<i class="fa-solid fa-location-dot"></i>
+<div>
+<h6>Office Address</h6>
+<p>Add your company address here.</p>
+</div>
+</div>
+
+<div class="contact-detail">
+<i class="fa-solid fa-phone"></i>
+<div>
+<h6>Phone Number</h6>
+<a href="tel:+000000000000">+000 000 000 000</a>
+</div>
+</div>
+
+<div class="contact-detail">
+<i class="fa-solid fa-envelope"></i>
+<div>
+<h6>Email Address</h6>
+<a href="mailto:info@example.com">info@example.com</a>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="col-lg-7">
+
+<div class="contact-form">
+
+<h4>Send an Enquiry</h4>
+
+<form id="contactForm">
+
+<div class="row g-3">
+
+<div class="col-md-6">
+<label class="form-label">Full Name *</label>
+<input type="text" name="name" class="form-control"
+placeholder="Your full name" autocomplete="name" required>
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Email Address *</label>
+<input type="email" name="email" class="form-control"
+placeholder="Your email address" autocomplete="email" required>
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Phone Number</label>
+<input type="tel" name="phone" class="form-control"
+placeholder="Your phone number" autocomplete="tel">
+</div>
+
+<div class="col-md-6">
+<label class="form-label">Enquiry Type</label>
+<select class="form-select" name="subject">
+<option value="">Select an enquiry</option>
+<option>Exploration & Drilling</option>
+<option>Mine Operations</option>
+<option>Heavy Equipment</option>
+<option>Business Partnership</option>
+<option>General Enquiry</option>
+</select>
+</div>
+
+<div class="col-12">
+<label class="form-label">Your Message *</label>
+<textarea class="form-control" name="message" rows="5"
+placeholder="Tell us about your requirements..." required></textarea>
+</div>
+
+<div class="col-12">
+<button type="submit" class="btn-nature w-100">
+Submit Enquiry
+<i class="fa-solid fa-paper-plane"></i>
+</button>
+</div>
+
+</div>
+
+<div id="formMessage" class="mt-3 small" role="status" aria-live="polite"></div>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-lg-5">
+
+<a href="#home" class="brand">
+<span class="brand-icon"><i class="fa-solid fa-mountain-sun"></i></span>
+<span>
+GOLD MINING CO.
+<small>MINING & EXPLORATION</small>
+</span>
+</a>
+
+<p class="footer-description">
+Professional mining and exploration solutions built
+around technical capability, operational experience
+and responsible resource development.
+</p>
+
+</div>
+
+<div class="col-6 col-lg-3">
+
+<h6 class="footer-title">Explore</h6>
+
+<ul class="footer-links">
+<li><a href="#about">About Us</a></li>
+<li><a href="#services">Our Services</a></li>
+<li><a href="#projects">Equipment</a></li>
+<li><a href="#commitment">Our Commitment</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</div>
+
+<div class="col-6 col-lg-4">
+
+<h6 class="footer-title">Contact Information</h6>
+
+<ul class="footer-links">
+<li><a href="tel:+000000000000">+000 000 000 000</a></li>
+<li><a href="mailto:info@example.com">info@example.com</a></li>
+<li><a href="#contact">Company office address</a></li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+<p class="mb-0">© <span id="year"></span> Gold Mining Co. All Rights Reserved.</p>
+<p class="mb-0">Mining & Exploration Solutions</p>
+</div>
+
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Close mobile menu after selecting a navigation link
+document.querySelectorAll('#mainNav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const nav = document.getElementById('mainNav');
+        const instance = bootstrap.Collapse.getInstance(nav);
+        if (instance) instance.hide();
+    });
+});
+
+// Front-end enquiry validation only
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    if (!this.checkValidity()) {
+        this.reportValidity();
+        return;
+    }
+
+    const message = document.getElementById('formMessage');
+    message.textContent = 'Your information is valid. Connect this form to your enquiry backend to receive submissions.';
+    message.style.color = '#285B49';
+});
+</script>
+
+</body>
+</html>
