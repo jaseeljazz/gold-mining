@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gold Mining Co. | Industrial Mining</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#D76B32;--black:#202326;--grey:#F0F1F1;--text:#62666a}
+*{box-sizing:border-box}
+body{font-family:'Barlow',sans-serif;color:var(--black)}
+a{text-decoration:none}
+.navbar{background:#fff;padding:17px 0;border-bottom:1px solid #ddd}
+.brand{font-size:22px;font-weight:800;color:var(--black)}
+.brand span{color:var(--orange)}
+.nav-link{font-size:14px;font-weight:600;color:#45494d!important;margin:0 8px}
+.btn-orange{background:var(--orange);color:white;padding:13px 22px;font-size:13px;font-weight:700;border:0}
+.btn-orange:hover{background:#b95122;color:white}
+.hero{min-height:690px;display:flex;align-items:center;background:linear-gradient(90deg,#171b20e8 0%,#171b20a8 55%,#171b2050),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=85') center/cover;color:white}
+.hero .container{padding-top:90px;padding-bottom:90px}
+.hero-tag{color:#ffb17d;font-weight:700;letter-spacing:3px;font-size:12px}
+.hero h1{font-size:clamp(44px,6vw,76px);font-weight:700;line-height:1.08;margin:23px 0}
+.hero p{color:#ddd;max-width:600px;font-size:17px;line-height:1.8}
+.section{padding:85px 0}
+.kicker{font-size:12px;color:var(--orange);font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.heading{font-size:clamp(30px,4vw,46px);font-weight:700;line-height:1.15;margin:12px 0 20px}
+.description{color:var(--text);font-size:15px;line-height:1.8}
+.stats{background:var(--orange);color:white;padding:32px 0}
+.stat{border-right:1px solid #ffffff55;text-align:center}
+.stat:last-child{border:0}
+.stat h2{font-size:38px;font-weight:700;margin:0}
+.stat p{font-size:13px;margin:5px 0 0}
+.about{background:#fff}
+.about img{width:100%;height:450px;object-fit:cover}
+.about-panel{background:var(--black);padding:35px;color:white}
+.about-panel h4{font-size:19px;font-weight:700}
+.about-panel p{color:#c6c8ca;font-size:13px;line-height:1.8}
+.service-area{background:var(--grey)}
+.service{padding:30px;background:white;border-left:4px solid var(--orange);height:100%;transition:.3s}
+.service:hover{transform:translateY(-5px);box-shadow:0 10px 25px #00000012}
+.service i{font-size:27px;color:var(--orange);margin-bottom:20px}
+.service h5{font-weight:700;font-size:19px}
+.service p{color:var(--text);font-size:14px;line-height:1.8;margin:0}
+.equipment{background:var(--black);color:white}
+.equipment .description{color:#c4c7c9}
+.machine{height:350px;position:relative;overflow:hidden;background:#444}
+.machine img{width:100%;height:100%;object-fit:cover;opacity:.82;transition:.4s}
+.machine:hover img{transform:scale(1.05);opacity:1}
+.machine-info{position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(transparent,#000d)}
+.machine-info small{color:#ffb17d;letter-spacing:1px;font-weight:700}
+.machine-info h5{font-size:21px;font-weight:700;margin:6px 0 0}
+.safety{background:#f6f6f5}
+.safety img{width:100%;height:430px;object-fit:cover}
+.safety-item{padding:12px 0;border-bottom:1px solid #ddd;font-size:14px}
+.safety-item i{color:var(--orange);margin-right:12px}
+.contact{background:white}
+.contact-panel{background:var(--grey);padding:35px}
+.form-control,.form-select{border:1px solid #ddd;border-radius:0;padding:13px;font-size:14px}
+.form-control:focus,.form-select:focus{border-color:var(--orange);box-shadow:none}
+footer{background:#171a1d;color:white;padding:55px 0 20px}
+footer p,footer a{color:#bfc2c4;font-size:13px;line-height:2}
+footer h6{font-weight:700}
+@media(max-width:767px){.section{padding:60px 0}.stat{border:0;margin-bottom:18px}.hero{min-height:600px}.about img,.safety img{height:310px}.contact-panel{padding:22px}}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top"><div class="container">
+<a class="brand" href="#">GOLD<span>MINING</span> CO.</a>
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse" id="nav"><ul class="navbar-nav ms-auto align-items-lg-center">
+<li><a class="nav-link" href="#about">Company</a></li><li><a class="nav-link" href="#services">Capabilities</a></li><li><a class="nav-link" href="#equipment">Machinery</a></li><li><a class="nav-link" href="#contact">Contact</a></li>
+<li class="ms-lg-3 mt-3 mt-lg-0"><a href="#contact" class="btn-orange">REQUEST INFORMATION <i class="fa-solid fa-arrow-right ms-2"></i></a></li>
+</ul></div></div></nav>
+
+<header class="hero"><div class="container"><div class="hero-tag">ENGINEERING THE RESOURCE FUTURE</div><h1>Built for the<br>Challenges of Mining.</h1><p>Mining, exploration and equipment solutions for complex operational environments. Technical capability and practical execution at every stage.</p><a class="btn-orange mt-3" href="#services">EXPLORE OUR CAPABILITIES <i class="fa-solid fa-arrow-right ms-2"></i></a></div></header>
+
+<section class="stats"><div class="container"><div class="row">
+<div class="col-6 col-lg-3 stat"><h2>15+</h2><p>Projects</p></div><div class="col-6 col-lg-3 stat"><h2>250+</h2><p>Equipment Units</p></div><div class="col-6 col-lg-3 stat"><h2>500+</h2><p>Professionals</p></div><div class="col-6 col-lg-3 stat"><h2>10+</h2><p>Years Experience</p></div>
+</div></div></section>
+
+<section class="section about" id="about"><div class="container"><div class="row g-0 align-items-stretch">
+<div class="col-lg-7"><img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=1100&q=85" alt="Industrial mining operations"></div>
+<div class="col-lg-5"><div class="about-panel h-100 d-flex flex-column justify-content-center"><div class="kicker">WHO WE ARE</div><h2 class="heading text-white">Mining Knowledge. Operational Strength.</h2><p>We support mining projects through exploration, drilling, extraction and equipment capabilities. Our focus is on practical execution, workforce capability and operational performance.</p><div class="mt-3"><h4><i class="fa-solid fa-shield-halved text-warning me-2"></i> Safety & Control</h4><p>Operational procedures and risk awareness built into project delivery.</p></div><div class="mt-2"><h4><i class="fa-solid fa-gears text-warning me-2"></i> Technical Resources</h4><p>Equipment and experienced personnel for demanding project needs.</p></div></div></div>
+</div></div></section>
+
+<section class="section service-area" id="services"><div class="container">
+<div class="kicker">WHAT WE DO</div><h2 class="heading">Integrated Mining Capabilities</h2><p class="description mb-5">From early-stage exploration to operational support, our services address key mining project requirements.</p>
+<div class="row g-4">
+<div class="col-md-6 col-lg-4"><div class="service"><i class="fa-solid fa-compass-drafting"></i><h5>Exploration & Drilling</h5><p>Geological investigation, drilling, sampling and mineral evaluation activities.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="service"><i class="fa-solid fa-mountain"></i><h5>Mine Development</h5><p>Excavation, extraction, site preparation and operational management.</p></div></div>
+<div class="col-md-6 col-lg-4"><div class="service"><i class="fa-solid fa-truck-monster"></i><h5>Heavy Equipment</h5><p>Machinery supporting material movement, earthworks and mine operations.</p></div></div>
+</div></div></section>
+
+<section class="section equipment" id="equipment"><div class="container">
+<div class="kicker">FLEET & MACHINERY</div><h2 class="heading text-white">Equipment for Demanding Operations</h2><p class="description mb-5">A visual overview of machinery categories supporting mining and exploration work.</p>
+<div class="row g-3">
+<div class="col-md-6 col-lg-3"><div class="machine"><img src="https://images.unsplash.com/photo-1580901368919-7738efb0f87e?auto=format&fit=crop&w=700&q=85" alt="Excavation machinery"><div class="machine-info"><small>01 / EARTHMOVING</small><h5>Excavators</h5></div></div></div>
+<div class="col-md-6 col-lg-3"><div class="machine"><img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=700&q=85" alt="Processing equipment"><div class="machine-info"><small>02 / PROCESSING</small><h5>Crushing Equipment</h5></div></div></div>
+<div class="col-md-6 col-lg-3"><div class="machine"><img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=700&q=85" alt="Transport truck"><div class="machine-info"><small>03 / TRANSPORT</small><h5>Haul Trucks</h5></div></div></div>
+<div class="col-md-6 col-lg-3"><div class="machine"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=700&q=85" alt="Drilling equipment"><div class="machine-info"><small>04 / EXPLORATION</small><h5>Drilling Machinery</h5></div></div></div>
+</div></div></section>
+
+<section class="section safety"><div class="container"><div class="row g-5 align-items-center">
+<div class="col-lg-6"><div class="kicker">OUR OPERATING PRINCIPLES</div><h2 class="heading">Responsible Work. Reliable Execution.</h2><p class="description">Strong mining operations depend on people, equipment, planning and consistent attention to safety and environmental responsibilities.</p>
+<div class="safety-item"><i class="fa-solid fa-check"></i>Occupational health and safety procedures</div><div class="safety-item"><i class="fa-solid fa-check"></i>Workforce training and development</div><div class="safety-item"><i class="fa-solid fa-check"></i>Equipment inspection and maintenance</div><div class="safety-item"><i class="fa-solid fa-check"></i>Environmental risk awareness</div></div>
+<div class="col-lg-6"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85" alt="Industrial workforce"></div>
+</div></div></section>
+
+<section class="section contact" id="contact"><div class="container"><div class="row g-5">
+<div class="col-lg-5"><div class="kicker">CONTACT THE TEAM</div><h2 class="heading">Tell Us About Your Project.</h2><p class="description">For mining, exploration and equipment enquiries, contact our team.</p><p class="mt-4"><i class="fa-solid fa-phone text-warning me-2"></i> +000 000 000 000</p><p><i class="fa-solid fa-envelope text-warning me-2"></i> info@example.com</p><p><i class="fa-solid fa-location-dot text-warning me-2"></i> Company office address</p></div>
+<div class="col-lg-7"><div class="contact-panel"><h4 class="mb-4 fw-bold">PROJECT ENQUIRY</h4><form><div class="row g-3"><div class="col-md-6"><input class="form-control" placeholder="Full name" required></div><div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div><div class="col-md-6"><input class="form-control" placeholder="Phone"></div><div class="col-md-6"><select class="form-select"><option>Choose service</option><option>Exploration</option><option>Mining operations</option><option>Equipment</option></select></div><div class="col-12"><textarea class="form-control" rows="5" placeholder="Project details"></textarea></div><div class="col-12"><button type="button" class="btn-orange">SEND ENQUIRY <i class="fa-solid fa-arrow-right ms-2"></i></button></div></div></form></div></div>
+</div></div></section>
+
+<footer><div class="container"><div class="row g-4"><div class="col-lg-5"><h4 class="fw-bold">GOLD<span class="text-warning">MINING</span> CO.</h4><p class="mt-3">Mining and exploration capabilities for challenging industrial environments.</p></div><div class="col-6 col-lg-3"><h6>Navigation</h6><p><a href="#about">Company</a><br><a href="#services">Capabilities</a><br><a href="#equipment">Machinery</a></p></div><div class="col-6 col-lg-4"><h6>Contact</h6><p>+000 000 000 000<br>info@example.com<br>Company office address</p></div></div><hr class="border-secondary"><p class="mb-0">© <span id="year"></span> Gold Mining Co. All rights reserved.</p></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
